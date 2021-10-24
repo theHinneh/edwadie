@@ -21,8 +21,8 @@ export class WelcomeComponent implements OnInit {
       linkText: 'Sign up your store'
     },
     {
-      image: 'assets/images/iphone.svg',
-      imageAlt: 'delivery',
+      image: 'assets/images/join.png',
+      imageAlt: 'join',
       heading: 'Try our services',
       paragraph: "Experience the best your neighborhood has to offer, all in one platform.",
       linkText: 'Get Started'
