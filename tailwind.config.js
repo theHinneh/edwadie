@@ -1,7 +1,10 @@
 module.exports = {
-  purge: [
-    './src/app/home/**/*.html'
-  ],
+  purge: {
+    enabled: true,
+    mode: 'all',
+    preserveHtmlElements: false,
+    content: ['./src/app/home/**/*.html']
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
