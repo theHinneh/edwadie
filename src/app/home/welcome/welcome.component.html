@@ -1,1 +1,87 @@
 <app-navbar></app-navbar>
+
+<div class="welcome">
+  <div class="banner bg-center bg-no-repeat bg-cover relative">
+    <div
+      class="heading absolute inset-x-0 top-32 max-w-2xl text-6xl text-center text-white font-bold flex items-center flex-col">
+      <div class="title">Groceries and more, delivered to your door</div>
+
+      <div class="form-group flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+
+        <input type="text" placeholder="Enter delivery address" class="form-control" id="Order Search">
+
+        <button class="button-go">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-14 mb-14 flex flex-auto flex-wrap justify-evenly items-center">
+    <div *ngFor="let delivery of deliveryContainer"
+         class="delivery flex justify-center items-center flex-col text-center">
+      <img height="154" width="154" [src]="delivery.image" [alt]="delivery.imageAlt">
+      <div class="text-content flex justify-center items-center flex-col">
+        <h3>{{delivery.heading}}</h3>
+        <p>{{delivery.paragraph}}</p>
+        <button class="flex justify-center items-center">
+          <span>{{delivery.linkText}}</span>
+          <div style="width: 4px"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="more">
+    <div class="py-12 bg-green-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mt-10">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <div class="relative flex-col flex justify-center">
+              <dt>
+                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">It’s all here. <br> All in one platform.
+                </p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-gray-500">
+                Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience stores, and more.
+              </dd>
+            </div>
+
+            <div class="relative">
+              <dt>
+                <img src="/assets/images/vegetables.jpeg" alt="">
+              </dt>
+            </div>
+
+            <div class="relative">
+              <dt>
+                <img src="/assets/images/market.webp" alt="">
+              </dt>
+            </div>
+
+            <div class="relative flex-col flex justify-center">
+              <dt>
+                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Every Flavor Welcome</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-gray-500">
+                From your neighborhood market to the market in the next neighbourhood, choose from over 300 local favorites across the nation., Kumasi and Accra.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
