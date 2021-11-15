@@ -30,22 +30,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/assets/css/vendor.css",
-              "src/assets/plugins/font-awesome/css/font-awesome.min.css",
-              "src/assets/fonts/Linearicons/Linearicons/Font/demo-files/demo.css",
-              "src/assets/plugins/bootstrap/css/bootstrap.min.css",
-              "src/assets/plugins/owl-carousel/assets/owl.carousel.min.css",
-              "src/assets/plugins/owl-carousel/assets/owl.theme.default.min.css",
-              "src/assets/plugins/slick/slick/slick.css",
-              "src/assets/plugins/nouislider/nouislider.min.css",
-              "src/assets/plugins/lightGallery-master/dist/css/lightgallery.min.css",
-              "src/assets/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css",
-              "src/assets/plugins/select2/dist/css/select2.min.css",
-              "src/styles.scss",
-              "src/assets/css/organic.css",
-              "src/assets/css/style.css"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": [
               "src/assets/js/main.js",
               "src/assets/plugins/jquery.min.js",
@@ -62,8 +47,7 @@
               "src/assets/plugins/slick-animation.min.js",
               "src/assets/plugins/lightGallery-master/dist/js/lightgallery-all.min.js",
               "src/assets/plugins/sticky-sidebar/dist/sticky-sidebar.min.js",
-              "src/assets/plugins/select2/dist/js/select2.full.min.js",
-              "src/assets/plugins/gmap3.min.js"
+              "src/assets/plugins/select2/dist/js/select2.full.min.js"
             ]
           },
           "configurations": {
